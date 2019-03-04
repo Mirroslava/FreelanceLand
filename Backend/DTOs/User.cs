@@ -21,6 +21,8 @@ namespace Backend.DTOs
         public string Password { get; set; }
 
         public int? UserRoleId { get; set; }
+
+        public int? Rating { get; set; }
     }
 }
 

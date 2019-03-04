@@ -15,6 +15,8 @@ namespace FreelanceLand.Models
 
         public string Phone_Number { get; set; }
 
+        public int? Rating {get;set;}
+
         public string Email { get; set; }
 
         public string Login { get; set; }

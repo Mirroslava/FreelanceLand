@@ -409,8 +409,37 @@ namespace Backend
                 TaskCustomer = user5,
                 Task = task1
             };
+            TaskHistory taskHistory6 = new TaskHistory
+            {
+                Date = new DateTime(2018, 12, 4),
+                TaskExecutor = user10,
+                TaskCustomer = user2,
+                Task = task6
+            };
+            TaskHistory taskHistory7 = new TaskHistory
+            {
+                Date = new DateTime(2018, 12, 4),
+                TaskExecutor = user9,
+                TaskCustomer = user7,
+                Task = task7
+            };
+            TaskHistory taskHistory8 = new TaskHistory
+            {
+                Date = new DateTime(2018, 12, 4),
+                TaskExecutor = user7,
+                TaskCustomer = user2,
+                Task = task8
+            };
+            TaskHistory taskHistory9 = new TaskHistory
+            {
+                Date = new DateTime(2018, 12, 4),
+                TaskExecutor = user9,
+                TaskCustomer = user1,
+                Task = task9
+            };
 
-            
+
+
             if (!context.UserRoles.Any())
             {
                 context.UserRoles.AddRange(
@@ -511,7 +540,10 @@ namespace Backend
                         taskHistory2,
                         taskHistory3,
                         taskHistory4,
-                        taskHistory5
+                        taskHistory5,
+                        taskHistory7,
+                        taskHistory8,
+                        taskHistory9
                     );
                 context.SaveChanges();
             }

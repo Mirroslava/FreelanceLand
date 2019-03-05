@@ -23,13 +23,7 @@ namespace Backend.Controllers
         {
             _usersService = usersService;
         }
-        [HttpGet]
-        public ActionResult<User> Get()
-        {
-            var dtos = _usersService.GetAllEntities();
-
-            return Ok(dtos);
-        }
+       
 
         [HttpGet]
         public ActionResult<User> Get()

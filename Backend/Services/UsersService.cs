@@ -66,7 +66,8 @@ namespace Backend.Services
                 var user = _mapper.Map<UserDTO, User>(dto);
                 userRepo.Create(user);
             }
-            
+        }
+
         public UserInformation GetUserInformation(int id)
         {
             var entities = userRepo.FindById(id);
